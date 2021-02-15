@@ -1,0 +1,262 @@
+@media only screen  and (orientation : landscape) and (max-width:1430px) {
+    .page{
+        padding-bottom: 5%;
+    }
+    .details{
+        padding: 50px 60px;
+        
+    }
+}
+@media only screen  and (orientation : landscape) and (max-width:1030px) {
+    .page{
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    .details{
+        padding: 60px 60px;
+        width: 45%;
+        height: fit-content;
+    }
+    .registerbtn,.loginbtn{
+        margin: 0px;
+    }
+    .option{
+        justify-content: space-around;
+    }
+    .details{
+        height: fit-content;
+    }
+}
+@media only screen and (max-width:795px) {
+    .nav-btn{
+        width: 55%;
+    }
+    
+    
+}
+
+@media only screen and (max-width:610px){
+    .cwrap .heading{
+        height: 100px;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+    .cname,.cemail,.cph,.corg,.ceid{
+        height: 35px;
+        margin-bottom: 15px;
+    }
+    .head{
+        font-size: large;
+        font-weight: 600;
+        margin-right: 50px;
+    }
+    .value{
+        font-size: small;
+        font-weight: 600;
+        margin-right: 50px;
+    }
+    .pic img{
+        height: 120px;
+        width: 240px;
+        margin-top: 20px;
+    
+    }
+    .btns{
+        margin-top: 40px;
+        padding-bottom: 80px;
+    }
+    .confirm, .edit{
+        width: 130px;
+        height: 35px;
+        font-size: medium;
+        font-weight: 600;
+        border-radius: 20px;
+        margin-right: 50px;
+    }
+    
+}
+@media only screen and (orientation:landscape) and (max-width:825px){
+    .container img{
+        height: 79%;
+    width: 69%;
+    border-radius: 10px;
+    margin-left: -281px;
+    }
+}
+
+@media only screen  and (orientation : landscape) and (max-width:730px) {
+    .active{
+        display: block !important;
+    }
+    .details{
+        padding: 60px 30px;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .burger-nav {
+        display: block;
+        color: #E4E4E4;
+        font-size: xx-large;
+        padding: 15px 15px 0px 0px;
+    
+    }
+    .nav-btn-slide {
+        display: none;
+        padding-top: 60px;
+        background-color: #191919;
+        padding-bottom: 15px;
+        transition: all 2s;
+        position: fixed;
+    }
+    .nav-btn-slide li{
+        list-style: none;
+        margin: 20px;
+    }
+    .nav-btn-slide ul a{
+        color: #E4E4E4;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    
+    
+    
+}
+
+@media only screen and (orientation : portrait) and (max-width:1030px){
+    .details{
+        width: 100%;
+        height: calc(100%);
+        right: 0px;
+        top: 0px;
+        background: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .4));
+        background-color: transparent;
+        backdrop-filter: blur(3px);
+    }
+    .page{
+        height: fit-content;
+        height: 100vh;
+        padding-bottom: 5%;
+    }
+    .container{
+        height: 870px;
+        margin-top: 10%;
+        background-color: transparent;
+        background-image: url(../images/signup/signupbk.jpg);
+        background-position: cover;
+        padding: 0px;
+        background-position: 50% 60%;
+    }
+    .container img{
+        display: none;
+    }
+    .submitbtn {
+        height: 45px;
+        width: 100px;
+        border-radius: 30px;
+        color: white;
+        background-color: #E567A1;
+        font-size: medium;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:800px) and (orientation : portrait) {
+
+    .confirmpage{
+        
+        padding: 60px 0px;
+    
+        }
+    
+    .page{
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    .option{
+        justify-content: space-around;;
+    }
+    .registerbtn, .loginbtn{
+        margin: 0px;
+    }
+    .details{
+        padding: 10px 50px;
+    }
+}
+
+@media only screen and (max-width:720px) and (orientation : portrait) {
+    .active{
+        display: block !important;
+    }
+    .burger-nav {
+        display: block;
+        color: #E4E4E4;
+        font-size: xx-large;
+        padding: 15px 15px 0px 0px;
+    
+    }
+    .nav-btn-slide {
+        display: none;
+        padding-top: 60px;
+        background-color: #191919;
+        padding-bottom: 15px;
+        transition: all 2s;
+        position: fixed;
+    }
+    .nav-btn-slide li{
+        list-style: none;
+        margin: 20px;
+    }
+    .nav-btn-slide ul a{
+        color: #E4E4E4;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
+@media only screen and (max-width:510px)and (orientation : portrait){
+    .cwrap{
+        width: 90%;
+    } 
+    .confirmpage{
+        height: 1000px;
+    }
+    .pic img{
+        height: 80px;
+        width: 160px;
+        margin-top: 20px;
+    
+    }
+    .btns{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width:376px)and (orientation : portrait){
+    .cwrap{
+        width: 90%;
+    } 
+    .pic img{
+        height: 80px;
+        width: 160px;
+        margin-top: 20px;
+    
+    }
+    
+    .btns{
+        padding-bottom: 40px;
+    }
+}

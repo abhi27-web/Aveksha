@@ -1,0 +1,383 @@
+/*----Media queries----*/
+
+
+
+@media only screen and (max-width: 1500px){
+    .header li:nth-child(1){
+        margin-right: 30px;
+    }
+    
+    .header li:nth-child(2){
+        margin-right: 30px;
+        font-size: medium;
+        width: 140px;
+        height: 40px;
+    }
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+            /* background-position-x: -152px; */
+        
+    }
+    .wrap {
+        left: 63%;
+        top: 12%;
+    }
+    .wrap h1{
+        height: 120px;
+        min-width: 500px;
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    
+    .wrap h3{
+        font-weight: normal;
+        padding-left: 25%;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .wrap h3::before{
+        height: 2px;
+        width: 100px;
+        right: 110px;
+        top: 13px;
+    }
+    .wrap h3::after{
+        height: 2px;
+        width: 100px;
+        right: -220px;
+        top: -13px;
+    }
+    .btns{
+        padding-left: 80px;
+        margin-bottom: 15px;
+    }
+}
+    
+    @media only screen and (max-width: 1500px) and (orientation: landscape){
+        .container{
+            
+                background-position-x: -152px;
+            
+        }
+    }
+    
+    @media only screen and (max-width: 1050px) and (orientation: portrait){
+        .container{
+            background-position-x: -601px;
+        }
+    }
+    @media only screen and (max-width: 1050px){
+    .header li:nth-child(1){
+        font-size: medium;
+        width: 145px;
+        height: 35px;
+        margin-right: 30px;
+    }
+    
+    .header li:nth-child(2){
+        font-size: medium;
+        margin-right: 30px;
+        width: 120px;
+        height: 35px;
+    }
+    .wrap {
+        left: 65%;
+        width: 45%;
+        top: 17%;
+    }
+    .wrap h1{
+        min-width: 100%;
+        font-size: 42px;
+        margin-bottom: 0px;
+    }
+    
+    .wrap h3{
+        font-weight: normal;
+        width: 100%;
+        padding-left: 6%;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .wrap h3::before{
+        display: none;
+    }
+    .wrap h3::after{
+       display: none;
+    }
+    .loginbtn, .registerbtn{
+        height: 35px;
+        width: 100px;
+    }
+    .loginbtn{
+        margin-right: 20px;
+    }
+    .btns{
+        margin-bottom: 40px;
+    }
+    
+    
+    }
+    @media only screen and (max-width: 850px) and (orientation: landscape){
+        
+        .container {
+            background-position-x: -98px;
+            background-position-y: -36px;
+        }
+            .wrap {
+                left: 60%;
+                width: 45%;
+                top: 27%;
+            }
+            .wrap h3 {
+                font-weight: normal;
+                width: 100%;
+                padding-left: 14%;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+            .wrap h1 {
+                min-width: 100%;
+                font-size: 33px;
+                margin-bottom: -15px;
+                padding-left: 12%;
+            }
+            .btns {
+                padding-left: 49px;
+            }
+        
+    }
+    @media only screen and (max-width: 800px){
+        .container{
+            background-position : 10%;
+            background-position-x: -449px;
+        }
+        .wrap h3{
+            padding-left: 6%;
+        font-size: 18px;
+        }
+        .wrap h3::before{
+            display: none;
+        }
+        .wrap h3::after{
+            display: none;
+        }
+        .btns{
+            padding-left: 30px;
+        
+            
+        }
+        .header li:nth-child(1),.header li:nth-child(2){
+            font-size: small;
+            width: 115px;
+            margin-right: 30px;
+        }
+        
+        .wrap h3::before{
+            width: 40px;
+            right: 50px;
+        }
+        .wrap h3::after{
+            width: 40px;
+            right: -220px;
+        }
+        
+    }
+    @media only screen and (max-width: 750px) and (orientation: landscape){
+        .wrap {
+            left: 59%;
+            width: 45%;
+            top: 27%;
+        }
+        .wrap h3 {
+            font-size: large;
+            padding-left: 11%;
+        }
+        .container {
+            background-position: 27%;
+            background-position-x: -195px;
+            background-position-x: -101px;
+        }
+        .btns {
+            padding-left: 40px;
+        }
+    }
+   
+    
+   
+    
+    
+    
+    
+    @media only screen and (max-width: 650px){
+    .wrap h3{
+        font-size: large;
+        padding-left: 5%;
+    }
+    .wrap h3::after, .wrap h3::before{
+        display: none;
+    }
+    /* .wrap h3::before{
+        left: -37px;
+    } */
+    .btns{
+        padding-left: 10px;
+    }
+    .registerbtn, .loginbtn{
+        width: 120px;
+    }
+    }
+    
+    @media only screen and (max-width:570px) and (orientation:landscape){
+        .wrap h1 {
+            min-width: 100%;
+            font-size: 25px;
+            margin-bottom: -15px;
+            padding-left: 2%;
+        }
+        .wrap h3 {
+            font-size: 16px;
+            padding-left: 4%;
+        }
+    }
+    @media only screen and (max-width: 550px){
+    .container{
+        background-position : 87%;
+    }
+    .wrap{
+        left: 50%;
+        width: 50%;
+        top: 18%;
+    }
+    .btns{
+        padding-left: 30px;
+    }
+    .wrap h1{
+        font-size: 28px;
+        height: 91px;
+    }
+    .wrap h3{
+        font-size: small;
+    }
+    
+    }
+    
+    @media only screen and (max-width: 450px){
+        .wrap h3::after, .wrap h3::before{
+            width: 0px;
+        }
+        
+        .wrap h3{
+            padding-left: 15%;
+    }
+    
+    .registerbtn,.loginbtn{
+        margin-right: 10px;
+    }
+    
+    .wrap h1{
+        font-size: 25px;
+    }
+    }
+    
+    
+    @media only screen and (max-width: 420px){
+        ul{
+            justify-content: space-around;
+            width: 100%;
+            
+            
+        }
+        .header li:nth-child(1){
+            font-size: small;
+            width: 140px;
+            height: 40px;
+            margin: 0%;
+        }
+        
+        .header li:nth-child(2){
+            font-size: small;
+            width: 140px;
+            height: 40px;
+            margin: 0%;
+        }
+        
+        .container{
+            background-color:  #FFECCB;
+            background-position: -5% 88%;
+            background-size: 119%;
+        /* background-image: none; */
+        /* background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255, 255, 255, 0.55)), url(./home.png); */
+    }
+    .wrap{
+        
+        left: 0px;
+        width: 100%;
+        
+    }
+    .wrap h1{
+        height: 80px;
+        max-width: 90%;
+        min-width: 90%;
+        font-size: 30px;
+        margin-bottom: 5px;
+        padding-left: 20%;
+    }
+    
+    .wrap h3{
+        margin-left: 5px;
+        font-weight: normal;
+        padding-left: 14%;
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+    .wrap h3::before{
+        height: 2px;
+        width: 0px;
+        right: 0px;
+        left: -30px;
+        top: 13px;
+    }
+    .wrap h3::after{
+        height: 2px;
+        width: 0px;
+        right: -220px;
+        top: -13px;
+    }
+    .btns{
+        padding-left: 0px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .loginbtn{
+        margin: 0%;
+        
+    }
+    .registerbtn{
+        margin: 0%;
+        
+    }
+    
+    
+    }
+    
+    @media only screen and (max-width: 325px){
+    .container{
+        background-position: -5% 104%;
+    }
+    .wrap h1{
+        font-size: 26px;
+    }
+    
+    .wrap h3{
+        font-weight: normal;
+        font-size: small;
+        padding-left: 21%;
+        margin-bottom: 58px;
+    }
+    }
