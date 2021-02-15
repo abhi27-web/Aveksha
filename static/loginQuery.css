@@ -1,0 +1,131 @@
+@media only screen and (orientation : portrait) and (max-width:1030px){
+    .details{
+        width: 100%;
+        padding: 25% 10%;
+    }
+    #email,#password{
+        width: 60%;
+    }
+
+    .details{
+        border-radius: 10px;
+        backdrop-filter: blur(0px);
+        background: rgba(255,255,255,0.55);
+        right: 0px;
+        height: 100%;
+        top: 0px;
+    }
+
+    .container img{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .container{
+        background-image: url(../images/login/port.jpg);
+        background-size: cover;
+        background-position: 0% 30%;
+        padding: 0px;
+    }
+    .loginbtn, .registerbtn{
+        font-size: large;
+    }
+    .page{
+        background-image: linear-gradient(45deg, #ffeccbc0 25%, #fffcfc 25%, #fffcfc 50%, #ffeccbc0 50%, #ffeccbc0 75%, #fffcfc 75%, #fffcfc 100%);
+        background-size: 848.53px 848.53px;
+    }
+    
+}
+@media only screen and (max-width: 1500px) and (orientation : landscape){
+    .details{
+        padding: 5%;
+    }
+    .page{
+        background-image: linear-gradient(45deg, #ffeccbc0 25%, #fffcfc 25%, #fffcfc 50%, #ffeccbc0 50%, #ffeccbc0 75%, #fffcfc 75%, #fffcfc 100%);
+        background-size: 848.53px 848.53px;
+    }
+    .heading h1{
+        font-size: 4vw;
+    }
+    
+    .heading h3{
+        font-size: 1.2vw;
+    }
+    .submitbtn{
+        height: 35px;
+        width: 80px;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .page{
+        
+            background-image: linear-gradient(45deg, #ffeccbc0 25%, #fffcfc 25%, #fffcfc 50%, #ffeccbc0 50%, #ffeccbc0 75%, #fffcfc 75%, #fffcfc 100%);
+            background-size: 848.53px 848.53px;
+        
+    }
+    .details{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:800px) and (orientation : portrait) {
+    .details{
+        width: 100%;
+        padding: 15% 10%;
+    }
+    #email,#password{
+        width: 80%;
+    }
+    
+}
+
+
+@media only screen and (max-width:795px) {
+    .nav-btn{
+        width: 55%;
+    }
+    
+    
+}
+
+@media only screen and (max-width:720px) {
+    .active{
+        display: block !important;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .burger-nav {
+        display: block;
+        color: #E4E4E4;
+        font-size: xx-large;
+        padding: 15px 15px 0px 0px;
+    
+    }
+    .nav-btn-slide {
+        display: none;
+        padding-top: 60px;
+        background-color: #191919;
+        padding-bottom: 15px;
+        transition: all 2s;
+        position: fixed;
+    }
+    .nav-btn-slide li{
+        list-style: none;
+        margin: 20px;
+    }
+    .nav-btn-slide ul a{
+        color: #E4E4E4;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+
+    
+}
