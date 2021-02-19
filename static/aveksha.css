@@ -883,4 +883,24 @@ footer.copyright a{
     }
    
 }
+/* input form */
+#labels{
+    height:130px;
+    width:150px;
+    float: left;
+}
+label{
+    line-height: 18px;
+}
+
+.textform
+{
+    
+    display:flex;
+    height:290px;
+    width:330px;
+    margin:0px auto;
+    position: relative;
+    
+}
 
