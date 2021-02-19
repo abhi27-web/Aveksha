@@ -1,28 +1,3 @@
-/* fonts  */
-@font-face {
-    font-family:"Raleway-regular";
-    src:url(../fonts/Raleway-Regular.ttf)
-}
-@font-face {
-    font-family:"Raleway-medium";
-    src:url(../fonts/Raleway-Medium.ttf)
-}
-@font-face {
-    font-family:"Raleway-bold";
-    src:url(../fonts/Raleway-Bold.ttf)
-}
-@font-face {
-    font-family:"Raleway-extrabold";
-    src:url(../fonts/Raleway-ExtraBold.ttf)
-}
-@font-face {
-    font-family:"Raleway-semibold";
-    src:url(../fonts/Raleway-SemiBold.ttf)
-}
-@font-face {
-    font-family:"Raleway-black";
-    src:url(../fonts/Raleway-Black.ttf)
-}
 
 
 /* colors  */
