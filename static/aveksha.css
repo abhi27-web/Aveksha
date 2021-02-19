@@ -874,11 +874,14 @@ label{
 .textform
 {
     
-    display:flex;
-    height:290px;
-    width:330px;
-    margin:0px auto;
+    background: white;
+    display: flex;
+    height: 290px;
+    /* width: 1294px; */
+    margin: 0px auto;
     position: relative;
+    align-items: center;
+    justify-content: center;
     
 }
 
