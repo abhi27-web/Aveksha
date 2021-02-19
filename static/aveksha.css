@@ -149,12 +149,7 @@ body{
 
 
 
-#creators
-{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+
 
 
 
@@ -170,6 +165,7 @@ body{
   header.topbar .auth > div a{
       color:var(--pure);
       text-decoration: none;
+      font-family: "arial";
   }
   header.topbar .icons a{
     margin-right:0.6rem;
@@ -238,7 +234,7 @@ nav .navbar a:hover{
     display:block;
     width:100%;
     height:69px;
-    background-image:url(../icons/shadow.svg);
+    /* background-image:url(../icons/shadow.svg); */
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -255,7 +251,7 @@ nav .navbar a:hover{
     display:block;
     width:100%;
     height:69px;
-    background-image:url(../icons/shadow-sm.svg);
+    /* background-image:url(../icons/shadow-sm.svg); */
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -270,7 +266,7 @@ nav .navbar a:hover{
 }
 header.hero{
     height:600px;
-    background-image:url(../images/hero.png);
+    /* background-image:url(../images/hero.png); */
     background-position: 0% 0%;
     background-repeat: no-repeat;
     overflow:hidden;
@@ -282,22 +278,22 @@ header.hero .welcome{
     margin-bottom:0.25rem;
 }
 header.hero .welcome span{
-    font-family:"Raleway-bold";
+    font-family:"arial";
     color:var(--secondary);
     margin-right:0.75rem;
 
 }
 header.hero h1{
-    font-family:"Raleway-extrabold";
+    font-family:"arial";
     color:var(--secondary);
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom:0.75rem;
 }
 header.hero h1 span{
     color:var(--primary);
 }
 header.hero p{
-    font-family: "Raleway-medium";
+    font-family: "arial";
     width:50%;
     line-height:1.5;
     margin-bottom:1rem;
@@ -357,7 +353,7 @@ section.top-products{
 }
 
 .section-heading{
-    font-family:"Raleway-bold";
+    font-family:"arial";
     text-align:center;
     Position:relative;
     margin-bottom:6rem;
@@ -367,7 +363,7 @@ section.top-products{
     display:block;
     width: 100%;
     height:30px;
-    background-image:url(../icons/hr.svg);
+    /* background-image:url(../icons/hr.svg); */
     background-repeat: no-repeat;
     background-position: center;
     position:absolute;
@@ -395,7 +391,7 @@ hr{
     margin:1rem 0;
 }
 section.top-products .food-slider .food-card h2{
-    font-family:"Raleway-bold";
+    font-family:"arial";
     font-size:1.3rem;
     margin-bottom:0.25rem;
 }
@@ -409,13 +405,13 @@ section.top-products .food-slider .food-card .stars img{
     margin-right:0.25rem;
 }
 section.top-products .food-slider .food-card .price{
-    font-family:"Raleway-medium";
+    font-family:"arial";
     color:var(--danger);
     margin-bottom: 1rem;
 }
 section.top-products .food-slider .food-card button{
     height: 237px;
-    font-family:"Raleway-medium";
+    font-family:"arial";
     color:var(--secondary);
     background:var(--heaven);
     border:2px solid var(--primary);
@@ -488,13 +484,19 @@ section.top-products .food-slider .food-card button:hover{
     padding:1rem 0;
 }
 section.about-meal img{
-    width:85%;
+    width:57%;
 }
 .flex-1{
     flex:1;
 }
+#creators
+{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 section.about-meal h2{
-    font-family: "Raleway-bold";
+    font-family: "arial";
     font-size:1.4rem;
     color:var(--secondary);
     margin-bottom:2rem;
@@ -503,6 +505,7 @@ section.about-meal h2{
 section.about-meal p{
     line-height: 1.7;
     margin-bottom:4rem;
+    font-family: "arial";
 }
 
 section.our-services{
@@ -538,7 +541,7 @@ section.our-services .service-card .icon{
     -o-transform:translateX(-50%);
 } 
 section.our-services .service-card h2{
-    font-family: "Raleway-bold";
+    font-family: "arial";
     font-size: 1.3rem;
     margin-bottom:1rem;
 }
@@ -564,12 +567,12 @@ section.subscribe .container div:last-child{
 }
 
 section.subscribe h1{
-    font-family:"Raleway-bold";
+    font-family:"arial";
     font-size: 1.5rem;
     margin-bottom:1.5rem;
 }
 section.subscribe p{
-    font-family:"Raleway-medium"; 
+    font-family:"arial"; 
     font-size: 1rem;
     margin-bottom:1.5rem;
     line-height: 1.5;
@@ -659,7 +662,7 @@ section.contact-us .contact-info > div > div > div{
     flex-direction: column;
 }
 section.contact-us .contact-info > div > div > div span:first-child{
-    font-family: "Raleway-bold";
+    font-family: "arial";
     margin-bottom:0.25rem;
 }
 footer{
@@ -763,7 +766,7 @@ footer.copyright a{
 .nav-background .mobile-nav ul li a{
     text-decoration: none;
     color:var(--secondary);
-    font-family: "Raleway-medium";
+    font-family: "arial";
 }
 .nav-background .mobile-nav ul li a:hover{
     color:var(--primary);
@@ -776,7 +779,7 @@ footer.copyright a{
     margin-right:1rem;
 }
 .nav-background .contact h5,.nav-background .time h5{
-    font-family:"Raleway-bold";
+    font-family:"arial";
     margin-bottom:0.25rem;
     font-size:1rem;
 }
@@ -789,7 +792,7 @@ footer.copyright a{
 .nav-background .cart a{
     color:var(--secondary);
     text-decoration: none;
-    font-family: "Raleway-bold";
+    font-family: "arial";
 }
 .nav-background .cart img{
     margin-right:0.75rem;
