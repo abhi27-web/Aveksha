@@ -3,293 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AVEKSHA</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="aveksha.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@800&family=Redressed&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../static/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>About</title>
 </head>
 
-<body>  <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow bg-black">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="aveksha.html">AVEKSHA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-2">
-                        <a class="nav-link text-capitilize active" href="aveksha.html">Home</a>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link text-capitalize" href="stats.html">Statistics</a>
-                    </li>
-                    <!-- <li class="nav-item me-2">
-                        <a class="nav-link text-capitalize" href="map.html">map</a>
-                    </li> -->
-                    <li class="nav-item me-2">
-                        <a class="nav-link text-capitalize" href="contact.html">Contact Us</a>
-                    </li>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo dj a">AVEKSHA</div>
+            <div class="nav-btn ">
+                <ul>
+                    {% if(isLoggedin==0 ) %}
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        {% else %}
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/about">About</a></li>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            {% endif %}
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- navbar ebding -->
-
-    <nav>
-        <div class="top">
-            <div class="container flex justify-between">
-                <div class="contact flex items-center">
-                    <!-- <img src="/img/1.jpeg" alt=""> -->
-
-                </div>
-
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
 
-    </nav>
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                        <li><a class="" href="/about">About</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/user/logout">Logout</a></li>
 
-                <header class="hero flex items-center">
-                    <div class="container">
-                        <div class="welcome flex items-center">
-                            <h2>Welcome to</h2>
-                            
-                        </div>
-                        <h1>AVEKSHA </h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
-                       
-                        <div class="hero-image">
-                <img src="img/side1.gif" style="    width: 502px;
-                            height: 478px; border-radius: 249px;" alt="">
-            </div>
-                    </div>
-                </header>
-
-                <section class="top-products">
-                    <div class="container">
-                        <h1 class="section-heading">What Aveksha does</h1>
-                        <div class="slider">
-                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
-                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
-                            <div class="food-slider">
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="img/a.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">WOMEN SAFETY</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
-                                        </div>
-
-                                        <div class="flex justify-center">
-                                            <button>
-                                                
-                                                <span>Violence and discrimination can blight women’s lives and
-                                                    hold them back from playing a full part in the workplace, society
-                                                    and the economy. AVEKSHA is taking
-                                                    action to improve women’s rights and safety in the communities in
-                                                    which we operate.</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="img/b.jpg" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">NO MORE SOCIETY SHAMING</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
-                                        </div>
-
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <!-- <img src="./icons/cart-2.svg" alt=""> -->
-                                                <span>Abuse on Twitter can include general nastiness or name calling .
-                                                    . It can be more targeted harassment or can be more direct
-                                                    threatsOur team will do their best
-                                                    to find the culprit behind the dirty tweets !</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="img/c.jpg" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Zero tolerance of harassment</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <!-- <img src="./icons/cart-2.svg" alt=""> -->
-                                                <span>We tried to revise and evolve our codes in order to address
-                                                    specific forms of
-                                                    harassment, including policies covering sexual harassment against
-                                                    women.</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="icons/d.jpg" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">No more Ignominy</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <!-- <img src="./icons/cart-2.svg" alt=""> -->
-                                                <span>The most beautiful thing a woman can wear is confidence.<br>dont
-                                                    let her loose it by your social media games</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <section class="about-meal">
-                    <div class="container">
-                        <h1 class="section-heading" style="font-family: Arial, Helvetica, sans-serif;font-size: xxx-large;">AVEKSHA</h1>
-                        <div class="about-meal-wrap flex">
-                            <div class="flex-1">
-                                <img src="img/1.jpeg" alt="">
-                            </div>
-                            <div class="flex-1">
-                                <h2>Stalking and sexual harassment are more prevalent among young women than among young
-                                    men</h2>
-                                <p>Some claim that women are rather technophobic and that men are much better users of
-                                    digital tools while others argue that women enthusiastically embrace digital
-                                    communication.So Aveksha helps us find the main culprit behind the wrong tweets that are 
-                                being commited on women through which they are becoming technophobic.The statistics page will
-                            show the names and location of that person who had tweeted bad about women.
-                        <br>The main idea of Aveksha is to produce fear in mind of people to think thrice before tweeting anything against them.</p>
-                                <!-- <button class="btn btn-secondary">Read More</button> -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
-              
-
-                
-                </section>
-
-
-                <nav class="creator-section">
-                    <div id="creators">
-                        <section class="creator-section1">
-                            <h2 class="center">SRISHTY BEDI</h2>
-                            <img src="img/SRISH.jpg" alt="">
-                            <p class="center">I am a Sophomore at Amity University, B.Tech CSE.Aiming to become
-                                Hard-working web
-                                developer with a flair for creating elegant solutions in the least amount of time.
-                                Passionate about
-                                front-end development.</p>
-                            <a href="https://www.linkedin.com/in/srishty-bedi-848b81191/" target="_blank"
-                                class="fa fa-linkedin"></a>
-                            <a href="https://github.com/srishty-07" target="_blank" class="fa fa-github"></a>
-                        </section>
-
-                        <section class="creator-section2">
-                            <h2 class="center">ABHIGYA VERMA</h2>
-                            <img src="img/ABHI.jpg" alt="">
-                            <p class="center">I am a Sophomore at IGDTUW, B.Tech IT. 'Learning By Doing' has always been
-                                my mantra.
-                                As a result, I am a believer who believes in the power of Artificial Intelligence to
-                                revolutionize
-                                the world.</p>
-                            <a href="https://www.linkedin.com/in/" target="_blank" class="fa fa-linkedin"></a>
-                            <a href="https://github.com/" target="_blank" class="fa fa-github"></a>
-                        </section>
-
-                        <section class="creator-section3">
-                            <h2 class="center">NISHTHA</h2>
-                            <img src="img/nish.jpg" width="130px" height="150px" alt="">
-                            <p class="center">I am a Sophomore at IGDTUW, B.Tech IT. Passionate front-end web developer
-                                with
-                                experience using JavaScript, HTML5, and CSS to build all aspects of the user experience
-                                for
-                                client-facing landing pages. </p>
-                            <a href="https://www.linkedin.com/in/nishtha-goyal-12a7871b6" target="_blank"
-                                class="fa fa-linkedin"></a>
-                            <a href="https://github.com/Nishtha0801" target="_blank" class="fa fa-github"></a>
-                        </section>
-
-                        <section class="creator-section3">
-                            <h2 class="center">ARCHIT GARG</h2>
-                            <img src="img/arch.jpg" width="130px" height="160px" alt="">
-                            <p class="center">I am a Sophomore at Guru Gobind Singh Indraprastha University, B.Tech CSE.I am an engineering student working on
-                                web applications
-                                
-                                 and web infrastructure with intrest in backend development </p>
-                            <a href="https://www.linkedin.com/in/architgarg603/" target="_blank"
-                                class="fa fa-linkedin"></a>
-                            <a href="https://github.com/architgarg603" target="_blank" class="fa fa-github"></a>
-                        </section>
-                    </div>
-                </nav>
-                <footer class="copyright">
-                    <div>
-                        Copyright|| &copy; www.Aveksha.com All rights reserved||
-                    </div>
-                </footer>
-            </div>
+                        <%}%>
+            </ul>
         </div>
+
     </div>
+    <div class="load">
+        <h1>Statistics</h1>
+        <div class="close"></div>
+        <form action="">
+            <label for="lat">Latitude</label>
+            <input type="text" name="" id="lat">
+            <label for="long">Longitude</label>
+            <input type="text" name="" id="long">
+            <div class="submit">Submit</div>
+        </form>
+    </div>
+    <div class="welcome">
+        <h1>Statistics</h1>
+        <h2 class="change">Change Location</h2>
+       
+        <div class="about">
+            <p>
+                Every 30s a woman receives a toxic tweet* <br>Above picture depicts the most
+                common bad words that have been used in tweets against the women
+            </p>
+        </div>
+        <div class="graph">
+
+            <img src="./backend/public/Images/bg.jpg" alt="">
+        </div>
+
+        <div class="lists">
+            <div class="headings">
+                <h3>Username</h3>
+                <h3>Location</h3>
+                <h3>Tweet</h3>
+            </div>
+            <div class="pt">
+                <h3>Username</h3>
+                <h3>Location</h3>
+                <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, rerum nostrum
+                    molestias ullam molestiae. Repellendus eveniet, voluptatem repellat at iusto eligendi modi quos
+                    beatae aperiam eius molestias, est expedita! </h3>
+            </div>
+
+        </div>
 
 
-
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="app.js"></script>
+    </div>
+    <div class="footer">
+        &copy; Aveksha 2021
+    </div>
+    <script src="../static/about.js"></script>
 </body>
 
 </html>
