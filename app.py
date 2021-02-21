@@ -9,35 +9,36 @@ from tweet import getAnalysis
 from tweet import clean
 from tweet import scraptweets
 from tweet import get_tweets
-app = Flask(__name__)
+from datetime import date
+from datetime import datetime
+app = Flask(_name_)
 
 def requestResults(user1,user2):
-    nusers,wc,df=get_tweets(user1,user2)
-    return nusers,wc,df
+    nusers,wc,df,todayGraph=get_tweets(user1,user2)
+    return nusers,wc,df,todayGraph
 
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
     print(os.getcwd())
-    if request.method == 'POST':        
+    if request.method == 'POST':      
         user1 = float(request.form['city1'])
         user2 = float(request.form['city2'])
-        nusers,wc,df = requestResults(user1,user2)
+        nusers,wc,df,todayGraph = requestResults(user1,user2)
         print(df['Analysis'].value_counts())
         plt.figure(figsize=(12,8))
         plt.imshow(wc, interpolation="bilinear")
         plt.axis('off')
-        plt.plot()   
-        plt.savefig('C:/Users/abhig/Downloads/DSCWOW/DSCWOW_Aveksha-main/DSCWOW_Aveksha/static/newplot1.png')
-        plt.title('Sentiment Analysis')
-        plt.xlabel('Sentiment')
-        plt.ylabel('Counts')        
-        df['Analysis'].value_counts().plot(kind = 'bar')  
-        plt.savefig('C:/Users/abhig/Downloads/DSCWOW/DSCWOW_Aveksha-main/DSCWOW_Aveksha/static/newplot2.png')
-        return render_template("Twitter_Today.html", column_names=nusers.columns.values, row_data=list(nusers.values.tolist()), zip=zip, url1 ='../static/newplot1.png', url2 ='../static/newplot2.png')
-    return render_template("Twitter_Today.html")
+        plt.plot()  
+        today = datetime.now().strftime("%Y%m%d-%H%M%S")
+        plt.savefig('./static/{}.png'.format(today))
+        # plt.title('Sentiment Analysis')
+        # plt.xlabel('Sentiment')
+        # plt.ylabel('Counts')        
+        # df['Analysis'].value_counts().plot(kind = 'bar')  
+        # # plt.show()
+        # plt.savefig('C:/Users/abhig/Downloads/DSCWOW/DSCWOW_Aveksha-main/DSCWOW_Aveksha/static/newplot2.png')
+        return render_template("about.html", isLoggedin=1,column_names=nusers.columns.values, row_data=list(nusers.values.tolist()), zip=zip, url1 ='./static/{}.png'.format(today), url2 ='./static/Graph{}.png'.format(todayGraph))
+    return render_template("about.html",isLoggedin=1)
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     app.run(debug = False)
-
-
-    

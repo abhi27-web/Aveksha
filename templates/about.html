@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>About</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo dj a">AVEKSHA</div>
+            <div class="nav-btn ">
+                <ul>
+                    {% if(isLoggedin==0 ) %}
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        {% else %}
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/about">About</a></li>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            {% endif %}
+                </ul>
+            </div>
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
+
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                        <li><a class="" href="/about">About</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/user/logout">Logout</a></li>
+
+                        <%}%>
+            </ul>
+        </div>
+
+    </div>
+    <div class="load">
+        <h1>Statistics</h1>
+        <div class="close"></div>
+        <form action="">
+            <label for="lat">Latitude</label>
+            <input type="text" name="" id="lat">
+            <label for="long">Longitude</label>
+            <input type="text" name="" id="long">
+            <div class="submit">Submit</div>
+        </form>
+    </div>
+    <div class="welcome">
+        <h1>Statistics</h1>
+        <h2 class="change">Change Location</h2>
+       
+        <div class="about">
+            <p>
+                Every 30s a woman receives a toxic tweet* <br>Above picture depicts the most
+                common bad words that have been used in tweets against the women
+            </p>
+        </div>
+        <div class="graph">
+
+            <img src="./backend/public/Images/bg.jpg" alt="">
+        </div>
+
+        <div class="lists">
+            <div class="headings">
+                <h3>Username</h3>
+                <h3>Location</h3>
+                <h3>Tweet</h3>
+            </div>
+            <div class="pt">
+                <h3>Username</h3>
+                <h3>Location</h3>
+                <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, rerum nostrum
+                    molestias ullam molestiae. Repellendus eveniet, voluptatem repellat at iusto eligendi modi quos
+                    beatae aperiam eius molestias, est expedita! </h3>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        &copy; Aveksha 2021
+    </div>
+    <script src="about.js"></script>
+</body>
+
+</html>
